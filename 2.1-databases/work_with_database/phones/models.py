@@ -3,7 +3,6 @@ from django.db import models
 from slugify import slugify
 
 class Phone(models.Model):
-    # TODO: Добавьте требуемые поля
     name = models.CharField(max_length=30)
     price = models.IntegerField(validators=[MinValueValidator(1)])
     image = models.CharField(max_length=500)
